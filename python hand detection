@@ -47,11 +47,11 @@ with mp_hands.Hands(
         totalTime = end - start
 
         fps = 1 / totalTime
-        #print("FPS: ", fps)
+        print("FPS: ", fps)
 
-        #cv2.putText(image, f'FPS: {int(fps)}', (20, 70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 2)
+        cv2.putText(image, f'FPS: {int(fps)}', (20, 70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 2)
 
-        #cv2.imshow('MediaPipe Hands', image)
+        cv2.imshow('MediaPipe Hands', image)
 
         #Next Part is Face Detection
         # ret, frame = cap.read()
